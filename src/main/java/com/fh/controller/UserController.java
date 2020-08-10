@@ -113,7 +113,9 @@ public class UserController {
     @RequestMapping("queryUser")
     public JsonData queryUser(){
        List<User> list =  userService.queryUser();
+        System.out.println("小白");
         return JsonData.getJsonSuccess(list);
+
     }
 
 
